@@ -2,7 +2,8 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+ background: url('https://images.unsplash.com/photo-1581093588401-010d3e7c33f9?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+ background-size: cover;
   color: white;
   scroll-behavior: smooth;
 }
@@ -37,7 +38,7 @@ header {
   margin: auto;
   padding: 20px;
 }
-.card {
+.card.animate  {
   background: rgba(255,255,255,0.05);
   padding: 20px;
   margin-bottom: 30px;
@@ -47,7 +48,7 @@ header {
   transform: translateY(30px);
   transition: all 0.6s ease-out;
 }
-.card.visible {
+.card.animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
