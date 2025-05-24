@@ -1,80 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background-color: #f4f7fa;
-  color: #333;
-}
-
-header {
-  background: linear-gradient(135deg, #004466, #007999);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
-  padding: 30px 20px;
+  scroll-behavior: smooth;
+}
+header {
   text-align: center;
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
 }
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+.navbar {
+  margin-top: 15px;
 }
-
-header p {
-  margin: 5px 0;
-  font-size: 1.2em;
-}
-
-.contact a {
-  margin: 0 8px;
+.navbar a {
+  color: #66fcf1;
+  margin: 0 10px;
   text-decoration: none;
-  color: #d6f3ff;
-  font-weight: 500;
-  font-size: 0.95em;
+  font-weight: bold;
 }
-
-.contact a:hover {
-  text-decoration: underline;
-  color: #ffffff;
+.navbar a:hover {
+  color: #fff;
 }
-
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 30px;
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #c5c6c7;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.container {
   max-width: 900px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  margin: auto;
+  padding: 20px;
 }
-
-section h2 {
-  font-size: 1.8em;
-  border-left: 6px solid #007999;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  color: #004466;
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
 }
-
-ul {
-  padding-left: 20px;
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-ul li {
-  margin-bottom: 8px;
+form label, form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #eee;
 }
-
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px 20px;
+  background: #66fcf1;
+  color: #0b0c10;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background: #45a29e;
+}
 footer {
   text-align: center;
   padding: 20px;
-  font-size: 0.9em;
-  background-color: #e3f2f9;
-  color: #003344;
-  margin-top: 40px;
+  background: #0b0c10;
+  color: #45a29e;
 }
-
-a {
-  color: #007999;
-}
-
-a:hover {
-  color: #004466;
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

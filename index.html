@@ -4,82 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nitin Kumar Singh | SDET Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1>Nitin Kumar Singh</h1>
     <p>SDET | Bangalore, India</p>
-    <div class="contact">
-      <a href="mailto:nitin0396@gmail.com">📧 Email</a> |
-      <a href="https://linkedin.com/in/nitin-singh-codes" target="_blank">🔗 LinkedIn</a> |
-      <a href="https://github.com/exzyycodes" target="_blank">💻 GitHub</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-icons">
+      <a href="mailto:nitin0396@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/nitin-singh-codes" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/exzyycodes" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a passionate and analytical SDET with expertise in automation frameworks, API/UI testing, and Agile delivery. I thrive in fast-paced environments and drive quality with precision and collaboration.</p>
-  </section>
+  <main class="container">
+    <section id="about" class="card animate">
+      <h2>About Me</h2>
+      <p>I am a passionate and analytical SDET with expertise in automation frameworks, API/UI testing, and Agile delivery. I thrive in fast-paced environments and drive quality with precision and collaboration.</p>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages & Tools:</strong> Java, Python, Selenium, TestNG, JUnit, Jenkins, Rally, Jira, Git</li>
-      <li><strong>Frameworks:</strong> Cucumber (BDD), Hybrid & Data-Driven</li>
-      <li><strong>Testing:</strong> Manual, API, UI, Regression, UAT</li>
-      <li><strong>CI/CD & Agile:</strong> Jenkins, Agile/Scrum, Defect Lifecycle Management</li>
-      <li><strong>Soft Skills:</strong> Team Leadership, Analytical Thinking, Self-Learning, Documentation</li>
-    </ul>
-  </section>
+    <section id="skills" class="card animate">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages & Tools:</strong> Java, Python, Selenium, TestNG, JUnit, Jenkins, Rally, Jira, Git</li>
+        <li><strong>Frameworks:</strong> Cucumber (BDD), Hybrid & Data-Driven</li>
+        <li><strong>Testing:</strong> Manual, API, UI, Regression, UAT</li>
+        <li><strong>CI/CD & Agile:</strong> Jenkins, Agile/Scrum, Defect Lifecycle Management</li>
+        <li><strong>Soft Skills:</strong> Team Leadership, Analytical Thinking, Self-Learning, Documentation</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Professional Experience</h2>
-    <h3>LTIMindtree — SDET, Quality Engineer</h3>
-    <p><strong>March 2024 – Present | Bangalore</strong></p>
-    <ul>
-      <li>Led E2E regression for API & UI, ensuring app stability</li>
-      <li>Built BDD frameworks with Selenium & Cucumber</li>
-      <li>Managed Agile sprints via Rally & Jira</li>
-      <li>Automated CI/CD pipelines in Jenkins</li>
-      <li>Awarded 2x Super-Crew Awards</li>
-    </ul>
+    <section id="projects" class="card animate">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project Gladiator</strong> — Mayo Clinic BDD Framework</li>
+        <li><strong>IDAC</strong> — AI-Powered Medical Web App</li>
+      </ul>
+    </section>
 
-    <h3>LTIMindtree — Graduate Apprentice (SDET Trainee)</h3>
-    <p><strong>Dec 2023 – March 2024 | Bhubaneshwar</strong></p>
-    <ul>
-      <li>Led a team of 6 on Project Gladiator framework</li>
-      <li>Automated 300+ UI and 150+ API tests</li>
-      <li>Built reusable automation components</li>
-    </ul>
-  </section>
+    <section class="card animate">
+      <h2>Download Resume</h2>
+      <a class="button" href="./resume/Nitin_Kumar_Singh_Resume.pdf" target="_blank">📄 Download PDF</a>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <h3>Project Gladiator – Mayo Clinic BDD Framework</h3>
-    <p>Scalable automation suite that boosted test efficiency by 40% with minimal manual intervention.</p>
+    <section id="contact" class="card animate">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mwkdavzb" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <h3>IDAC – AI-Powered Medical Web App</h3>
-    <p>Used TensorFlow, Django, Keras to assist users in preliminary diagnostics and reduce manual effort.</p>
-  </section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-  <section>
-    <h2>Education & Certifications</h2>
-    <ul>
-      <li><strong>B.Tech in Computer Science</strong> – VIT Bhopal | CGPA: 8.09</li>
-      <li><strong>Class XII</strong> – V.K.V. Dibrugarh | 65.2%</li>
-      <li><strong>Selenium, JUnit, TestNG</strong> – Self-trained through projects</li>
-      <li><strong>Insurance Domain + Duck Creek Policy</strong> – On-the-job experience</li>
-    </ul>
-  </section>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-  <section>
-    <h2>Download Resume</h2>
-    <p><a href="./resume/Nitin_Kumar_Singh_Resume.pdf" target="_blank">📄 Click here to download PDF</a></p>
-  </section>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Nitin Kumar Singh | Portfolio crafted with 💙 using HTML & CSS</p>
+    <p>© 2025 Nitin Kumar Singh | Built with 💙 and ⚡</p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
