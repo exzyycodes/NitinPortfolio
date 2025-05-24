@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #004466;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact a {
+  color: #aeefff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eeeeee;
+  margin-top: 20px;
+}
